@@ -37,7 +37,7 @@ public class CaptureScreenshotDemo {
 		File src=sht.getScreenshotAs(OutputType.FILE);
 		try{
 			
-			FileUtils.copyFile(src, new File("C:/Selenium/"+System.currentTimeMillis()+".png"));
+			FileUtils.copyFile(src, new File("C:/Selenium/"+CaptureScreenshotDemo.class.getSimpleName()+System.currentTimeMillis()+".png"));
 		}catch(Exception e)
 		{
 			System.out.println(e.getMessage());
